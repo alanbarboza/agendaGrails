@@ -3,6 +3,7 @@ Projeto de Pesquisa Científica - UFSCAR Universidade Federal de São Carlos
 
 ### Passo a Passo
 Siga o passo a passo detalhado abaixo para gerar a aplicação de **Contatos** utilizando o framework **Grails**.
+
 1. Crie a enum "br.com.ufscar.dsw.agenda.reference.Sexo" conforme exemplo:
 ```java
 package br.com.ufscar.dsw.agenda.reference;
@@ -42,6 +43,7 @@ grails > generate-all br.com.ufscar.dsw.agenda.domain.Contato
 
 ### Plugin JasperReports
 Siga os passos abaixo para configurar o JasperReports para exportar a lista de contatos em PDF.
+
 1. Crie e compile o layout do relatório usando o iReport Designer no seguinte diretório "/web-app/reports/".
 2. Edite o arquivo "/grails-app/conf/BuildConfig.groovy" e acrescente:
 ```groovy
