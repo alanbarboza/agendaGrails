@@ -5,7 +5,6 @@ Projeto de Pesquisa Científica - UFSCAR Universidade Federal de São Carlos
 Siga o passo a passo detalhado abaixo para gerar a aplicação de **Contatos** utilizando o framework **Grails**.
 
 1. Crie a enum "br.com.ufscar.dsw.agenda.reference.Sexo" conforme exemplo:
-
 ```java
 package br.com.ufscar.dsw.agenda.reference;
 public enum Sexo {
@@ -14,7 +13,6 @@ public enum Sexo {
 ```
 
 2. Crie o domain "br.com.ufscar.dsw.agenda.domain.Contato" conforme exemplo:
-
 ```groovy
 package br.com.ufscar.dsw.agenda.domain
 import br.com.ufscar.dsw.agenda.reference.Sexo
@@ -41,7 +39,6 @@ class Contato {
 ```
 
 3. Inicie o prompt de comando do Grails e siga os passos:
-
 ```sh
 grails > generate-all br.com.ufscar.dsw.agenda.domain.Contato
 ```
@@ -52,7 +49,6 @@ Siga os passos abaixo para configurar o JasperReports para exportar a lista de c
 1. Crie e compile o layout do relatório usando o iReport Designer no seguinte diretório "/web-app/reports/".
 
 2. Edite o arquivo "/grails-app/conf/BuildConfig.groovy" e acrescente:
-
 ```groovy
 plugins {
     ...
@@ -63,7 +59,6 @@ plugins {
 ```
 
 3. Edite o arquivo "/grails-app/views/contato/index.gsp" e acrescente:
-
 ```gsp
     ...
     <g:jasperReport controller="contato" action="exportar" jasper="contatoReportList" format="PDF" name="Exportar PDF" />
@@ -71,7 +66,6 @@ plugins {
 ```
 
 4. Edite o controller "br.com.ufscar.dsw.agenda.domain.ContatoController" e acrescente o método:
-
 ```groovy
     ...
 	def exportar = {
