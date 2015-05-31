@@ -55,7 +55,6 @@ plugins {
     compile ":jasper:1.11.0"
     ...
 }
-
 ```
 
 3. Edite o arquivo "/grails-app/views/contato/index.gsp" e acrescente:
